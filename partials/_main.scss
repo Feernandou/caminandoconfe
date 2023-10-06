@@ -1,0 +1,146 @@
+body{
+    font-family: $font;
+    header{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding-inline: 12em;
+        padding-block: 1em;
+        border-bottom: 1px solid rgba(211, 201, 201, 0.714);
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        h4{
+            
+            a{
+                text-decoration: none;
+                color: rgb(255, 95, 95);
+            }
+        }
+    }
+    .title{
+        padding-inline: 12em;
+        padding-block: 3em;
+        h1{
+            color: rgb(255, 95, 95);
+            font-size: 50px;
+        }
+    }
+    menu{
+        background-color: rgb(255, 95, 95) ;
+        ul{
+            display: flex;
+            flex-direction: row;
+            padding-inline: 12em;
+            padding-block: 1em;
+            gap: 25px;
+            li{
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    article{
+        padding-inline: 12em;
+        padding-block: 3em;
+        .parent{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "one one two three"
+            "one one four five";
+            gap: 10px;
+            height: 350px;
+            .card1{
+                grid-area:one;
+                background-image: url("./img/jesus.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+            .card2{
+                grid-area:two;
+                background-image: url("./img/descarte.avif");
+                background-size: cover;
+                background-position: center;
+                
+            }
+            .card3{
+                grid-area:three;
+                background-image: url("./img/iglesia.png");
+                background-size: cover;
+                background-position: center;
+            }
+            .card4{
+                grid-area:four;
+                background-image: url("./img/jesus.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+            .card5{
+                grid-area:five;
+                background-image: url("./img/jesus.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: end;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.02);
+                    transition: .3s all;
+                }
+                >*{
+                    margin-inline: 25px;
+                    margin-bottom: 25px;
+                    
+                    color: white;
+                }
+                .info{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    .nombre,.fecha{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        background-color: rgb(255, 95, 95);
+        
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        padding: 12em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        p{
+            font-size: 25px
+        }
+    }
+    footer{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.849);
+        padding: 1em;
+        margin-top: 25px;
+        color: white;
+    }
+}

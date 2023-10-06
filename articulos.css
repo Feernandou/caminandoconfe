@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+*{
+    font-family:'Gabarito', cursive ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    padding-block: 1em;
+    border-bottom: 1px solid rgba(211, 201, 201, 0.714);
+    background-color: rgb(255, 95, 95);
+    width: 100%;
+    position: fixed;
+}
+article{
+    padding-top: 4em;
+    padding-inline: 6em;
+    
+}
+#logo:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gabarito", cursive;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-inline: 12em;
+  padding-block: 1em;
+  border-bottom: 1px solid rgba(211, 201, 201, 0.714);
+  background-color: white;
+  width: 100%;
+  position: fixed;
+}
+body header h4 a {
+  text-decoration: none;
+  color: rgb(255, 95, 95);
+}
+body .title {
+  padding-inline: 12em;
+  padding-block: 3em;
+}
+body .title h1 {
+  color: rgb(255, 95, 95);
+  font-size: 50px;
+}
+body menu {
+  background-color: rgb(255, 95, 95);
+}
+body menu ul {
+  display: flex;
+  flex-direction: row;
+  padding-inline: 12em;
+  padding-block: 1em;
+  gap: 25px;
+}
+body menu ul li {
+  list-style-type: none;
+}
+body menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+body article {
+  padding-inline: 12em;
+  padding-block: 3em;
+}
+body article .parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "one one two three" "one one four five";
+  gap: 10px;
+  height: 350px;
+}
+body article .parent .card1 {
+  grid-area: one;
+  background-image: url("./img/jesus.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body article .parent .card2 {
+  grid-area: two;
+  background-image: url("./img/descarte.avif");
+  background-size: cover;
+  background-position: center;
+}
+body article .parent .card3 {
+  grid-area: three;
+  background-image: url("./img/iglesia.png");
+  background-size: cover;
+  background-position: center;
+}
+body article .parent .card4 {
+  grid-area: four;
+  background-image: url("./img/jesus.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body article .parent .card5 {
+  grid-area: five;
+  background-image: url("./img/jesus.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body article .parent .card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+body article .parent .card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.3s all;
+}
+body article .parent .card > * {
+  margin-inline: 25px;
+  margin-bottom: 25px;
+  color: white;
+}
+body article .parent .card .info {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+body article .parent .card .info .nombre, body article .parent .card .info .fecha {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+body section {
+  background-color: rgb(255, 95, 95);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main {
+  padding: 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+body main p {
+  font-size: 25px;
+}
+body footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.849);
+  padding: 1em;
+  margin-top: 25px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
