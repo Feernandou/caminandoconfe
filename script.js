@@ -13,3 +13,6 @@ card2.addEventListener("click",function(){
 card3.addEventListener("click",function(){
     window.location.href = "desafios.html"
 })
+card4.addEventListener("click",function(){
+    window.location.href = "mandamientos.html"
+})
