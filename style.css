@@ -141,4 +141,51 @@ body footer {
   padding: 1em;
   margin-top: 25px;
   color: white;
+}
+
+@media (max-width: 1300px) {
+  body header {
+    padding-inline: 6em;
+  }
+  body .title {
+    padding-inline: 6em;
+  }
+  body menu ul {
+    padding-inline: 6em;
+  }
+  body article {
+    padding-inline: 5em;
+    padding-block: 3em;
+  }
+}
+@media (max-width: 1100px) {
+  body article .parent {
+    height: 700px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "one one one one" "two two three three" "four four five five";
+  }
+}
+@media (max-width: 800px) {
+  body menu ul {
+    padding-inline: 3em;
+  }
+  body article {
+    padding-inline: 3em;
+  }
+  body article .parent {
+    height: 1800px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one one one one" "two two two two" "three three three three" "four four four four" "five five five five";
+  }
+  body main {
+    padding-inline: 2em;
+  }
+}
+@media (max-width: 450px) {
+  body header {
+    padding-inline: 3em;
+  }
+  body .title {
+    padding-inline: 3em;
+  }
 }/*# sourceMappingURL=style.css.map */
